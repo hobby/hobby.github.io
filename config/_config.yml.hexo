@@ -74,3 +74,6 @@ deploy:
 # 第三方系统
 baidu_analytics: d3d75263e921adcafc5c15821c13ffb3
 duoshuo_shortname: saaima
+
+# Creative Commons
+creative_commons: by-nc-sa
