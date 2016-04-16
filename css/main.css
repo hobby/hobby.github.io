@@ -1029,9 +1029,6 @@ pre .javascript .function {
   padding-top: 40px;
 }
 @media (max-width: 767px) {
-  .posts-expand {
-    margin: 0 20px;
-  }
   .post-body pre,
   .post-body .highlight {
     padding: 10px;
@@ -1516,7 +1513,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #964525;
+  background: #29003d;
 }
 .links-of-blogroll {
   font-size: 13px;
