@@ -5,26 +5,37 @@ categories: 开发日志
 tags: SAAIMA
 ---
 
-关于[saaima.com](//saaima.com)成长过程的里程碑事件，都可以在这里找到。
+## 谁搞的?
+[YIF](//saaima.com "认识认识Ta")，不是某某著名魔术师，但算一名软件工程师，坐标广东深圳，地道广东人。
+
+
+## 最初的想法
+> 俗话说，好记性不如烂笔头！
+> 俗话又说，独乐乐不如众乐乐！
+
+YIF的想法一目了然，就是想汇集与分享生活、学习和工作中收获的点滴，当然也会转载一些干货来存档，方便查阅。
+
 
 ## 踏出第一步，注册域名
+分享，在YIF看来有晒一晒、溜一溜的意思。另外，现在要拿出来晒的也多数会附带源码（嗯，实在）。于是，2016年3月21日，寓意分享（代码）的[saaima.com](//saaima.com)域名就被YIF收归名下，完成想法到行动的第一步。
+很巧合，历史上的这天，也是一个特别的日子，那时在csdn安了个家，但后来实习以后就没有保持更新（其实是用了云笔记，没有同步PUSH到csdn，后面会做数据迁移）。
 
-2016年3月21日，对于`saaima.com`来说，这是ta的生日，特此记录一下。
-`saaima.com`使用[万网](https://wanwang.aliyun.com/ "点击进入万网")提供的付费域名服务，也特此记录一下。
+`saaima.com`使用[万网](https://wanwang.aliyun.com/ "点击进入")提供的域名服务（要钱的），购买后就可以使用了（相对CN域名，少了认证过程，现阶段省事），记录在此，向大家透明。
+
 
 ## 站稳脚步，奔跑吧，SAAIMA
 目前同时使用[Github.com](https://github.com/ "点击进入")的免费pages空间，以及[Coding.net](https://coding.net/ "点击进入")的免费pages空间部署[saaima.com](//saaima.com "点击进入")。为什么呢？
 
 * **免费**、 **免费**、**免费**，重要的事情要说三遍
 * 支持**绑定域名**，**不用操心备案**，真心省事
-* 方便实现**异地**、**跨机房互备部署**、**就近接入**
+* 方便实现**异地跨机房互备部署**、基于DNS的**全局负载均衡**
 
-## 步步为营，建立静态博客
-由于经济问题，目前以静态博客形式搭建`saaima.com`。
-使用[Markdown](http://daringfireball.net/projects/markdown/syntax)、[Hexo](https://hexo.io/)、[NexT.Pisces](https://github.com/iissnan/hexo-theme-next)达到撰写博客、生成页面、美化界面的要求。
-这又是为何呢？
 
-* **开源**，可以深入学习，可以进一步改造、优化
-* hexo包含我需要的特性，**不用重复造轮子**
-* markdown语法易读易写，可以**专注内容**
-* next.pisecs符合视觉要求，**支持PC、无线端**，知足啦
+## 步步为营，点点滴滴迭代不停
+经过一系列的考虑、折衷、权衡，最终决定以静态博客方式构建`saaima.com`，结合[Markdown](http://daringfireball.net/projects/markdown/syntax)、[Hexo](https://hexo.io/)、[NexT.Pisces](https://github.com/iissnan/hexo-theme-next)来撰写博客、生成页面、美化界面。
+那么，这又是为何呢？
+
+* **开源**，可以深入学习，可以进一步优化、改造，这点很重要
+* hexo几乎包含笔者需要的所有特性，**不用重复造轮子**
+* markdown语法简单易读易写，可以**专注内容**
+* next.pisecs符合视觉要求，**支持PC、移动端**，**可扩展**，知足常乐
