@@ -43,7 +43,7 @@ menu_icons:
   #KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
   home: home
   about: user
-  categories: th
+  categories: folder-open
   tags: tags
   archives: archive
   commonweal: heartbeat
