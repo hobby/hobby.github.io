@@ -3,28 +3,74 @@ title: 费奕锋简历
 date: 2016-04-27 23:04:59
 layout: post
 comments: false
+hidedate: true
 ---
 
 <style>
 p.custom {
-    margin: 0px;
+	margin: 0px;
 	padding-left: 25px;
 }
+
+/* PC端屏幕 */
 p.custom2 {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 	padding-left: 25px;
 }
 img.picture {
 	float: right;
-	width: 250px;
+	width: 210px;
 	height: 250px;
 }
+p.custom .fancybox img {
+  margin: -15px 35px 0 0;
+}
+
+/* 移动端屏幕 */
 @media (min-width: 768px) and (max-width: 991px) {
-  p.custom .fancybox {
-    display: none;
+  p.custom .fancybox img {
+	margin: 0 auto;
+  }
+  img.picture {
+	float: right;
+	width: 180px;
+	height: 200px;
   }
 }
 @media (max-width: 767px) {
+  p.custom .fancybox img {
+	margin: 0 auto;
+  }
+  img.picture {
+	float: right;
+	width: 180px;
+	height: 200px;
+  }
+}
+/* iphone 6 竖屏 */
+@media (max-width: 450px) {
+  p.custom .fancybox img {
+	margin: 20px 0px 0 0;
+  }
+  img.picture {
+	float: right;
+	width: 130px;
+	height: 150px;
+  }
+}
+/* iphone 5s 竖屏 */
+@media (max-width: 350px) {
+  p.custom .fancybox img {
+	margin: 0 auto;
+	margin: 20px 0px 0 0;
+  }
+  img.picture {
+	float: right;
+	width: 105px;
+	height: 120px;
+  }
+}
+@media (max-width: 315px) {
   p.custom .fancybox {
 	display: none;
   }
@@ -33,7 +79,7 @@ img.picture {
 
 
 ## 个人信息
-<p class="custom"> <img class="picture" src="/images/default_avatar.jpg" style="margin: -15px 35px 0 0;"></img> <i class="fa fa-user"/></i> <span style="margin-left: 12px;">费奕锋</span>
+<p class="custom"> <img class="picture" src="/images/yif.jpg" style=""></img> <i class="fa fa-user"/></i> <span style="margin-left: 12px;">费奕锋</span>
 </p>
 
 <p class="custom"> <i class="fa fa-birthday-cake"/></i> <span style="margin-left: 8px;">1992年9月</span> </p>
@@ -49,21 +95,44 @@ img.picture {
 <p class="custom"> <i class="fa fa-heart-o"/></i> <span style="margin-left: 5px;">Linux & C/C++后台开发</span> </p>
 
 ## 教育背景
-<p class="custom"> <i class="fa fa-graduation-cap"/></i> <span style="margin-left: 5px;">2009.9 ~ 2013.6
-五邑大学&nbsp;&nbsp;&nbsp;&nbsp;计算机科学与技术专业&nbsp;&nbsp;&nbsp;&nbsp;优秀毕业生</span> </p>
+<p class="custom"> <i class="fa fa-graduation-cap"/></i> <span style="margin-left: 5px;">2009/09 ~ 2013/06
+五邑大学&nbsp;&nbsp;&nbsp;&nbsp;计算机科学与技术&nbsp;&nbsp;&nbsp;&nbsp;优秀毕业生</span> </p>
+
 
 ## 工作经历
-<p class="custom2"> <i class="fa fa-calendar-o"/></i> <span style="margin-left: 5px;">2014.3 ~ 2016.5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-group"/></i> &nbsp;&nbsp;京东数字营销业务部深圳研发部&nbsp;&nbsp;后台开发工程师
-负责京东直投、账务系统及BOSS管理系统PHP、CGI、SHELL、后台服务设计开发与日常维护工作</span> </p>
+<p class="custom2"> <i class="fa fa-calendar-o"/></i> <span style="margin-left: 5px;"><strong>2014/03 ~ 2016/05 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-group"/></i> &nbsp;&nbsp;京东数字营销业务部深圳研发部&nbsp;&nbsp;后台开发工程师</strong>
+负责京东直投、投放工具、BOSS管理系统PHP、CGI、SHELL、后台服务设计开发与维护工作</span> </p>
 
+<p class="custom2"> <i class="fa fa-calendar-o"/></i> <span style="margin-left: 5px;"><strong>2013/06 ~ 2014/03 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-group"/></i> &nbsp;&nbsp;腾讯深圳电商研发部&nbsp;&nbsp;后台开发工程师</strong>
+负责拍拍直通车系统CGI、SHELL、后台服务开发与维护工作</span> </p>
 
-<p class="custom2"> <i class="fa fa-calendar-o"/></i> <span style="margin-left: 5px;">2013.6 ~ 2014.3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-group"/></i> &nbsp;&nbsp;腾讯深圳电商研发部&nbsp;&nbsp;后台开发工程师
-负责拍拍直通车、易直投系统CGI、SHELL、后台服务开发与日常维护工作</span> </p>
 
 ## 项目经验
+<p class="custom2"> <i class="fa fa-calendar-o"/></i> <span style="margin-left: 5px;"><strong>2015/11 ~ 2016/05 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-wrench"/></i> &nbsp;&nbsp;设计与开发自动化工具 - [MKX](https://github.com/hobby/mkx)</strong>
+开发工具：Linux/Bash、Make、SSH、Expect
+主要工作：基于团队成员的工作模式、以及现存构建系统不足的现状，自主研发出能够快速增量编译、自动部署、远程控制的脚本工具，从而提升了团队的开发效率。
+</span> </p>
+
+<p class="custom2"> <i class="fa fa-calendar-o"/></i> <span style="margin-left: 5px;"><strong>2014/04 ~ 2016/05 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-wrench"/></i> &nbsp;&nbsp;京东直投、投放工具及管理端系统后台开发与维护</strong>
+开发工具：Linux、C/C++、JS/HTML、CGI、PHP、MySQL
+主要工作：主要参与产品系统架构设计、功能划分以及核心功能的开发与外部团队联调工作，保证项目按时高质量完成。负责京东直投投放端/同步/划账等前后台服务模块、投放工具及管理端系统JS/PHP模块开发与维护。负责基础环境搭建、维护以及独立定位线上问题，及时提出可行方案并解决问题。
+</span> </p>
+
+<p class="custom2"> <i class="fa fa-calendar-o"/></i> <span style="margin-left: 5px;"><strong>2013/07 ~ 2014/03 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-wrench"/></i> &nbsp;&nbsp;拍拍直通车、管理端系统后台开发与维护</strong>
+开发工具：Linux、C/C++、JS/HTML、CGI、PHP、MySQL
+主要工作：主要负责直通车投放端前/后台服务模块、管理端系统JS/PHP模块开发与维护。熟悉团队开发协作流程，掌握基于CGI/AppServer的WEB开发技术。
+</span> </p>
+
 
 ## 获得奖项
-* 2014~2015&nbsp;&nbsp;&nbsp;&nbsp;连续两年荣获京东集团年度优秀员工一等奖
-* 2010~2012&nbsp;&nbsp;&nbsp;&nbsp;连续三年荣获学校一等奖学金及三好学生
+* 2014 ~ 2015&nbsp;&nbsp;&nbsp;&nbsp;连续两年荣获京东集团年度优秀员工一等奖
+* 2010 ~ 2012&nbsp;&nbsp;&nbsp;&nbsp;连续三年荣获学校一等奖学金及三好学生
+
 
 ## 自我评价
+* 工作认真负责
+* 能够独立定位、解决问题
+* 良好学习、理解、抗压能力
+* 具备一定的团队管理、项目管理经验
+* 熟练掌握Linux环境C/C++、SHELL、MYSQL、WEB系统设计与开发
+
