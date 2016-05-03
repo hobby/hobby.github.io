@@ -12,13 +12,17 @@ custom_icon: download
 <style>
 p.custom {
 	margin: 0px;
-	padding-left: 25px;
+	padding-left: 20px;
+    word-break: break-word;
 }
 
 /* PC端屏幕 */
 p.custom2 {
 	margin-bottom: 20px;
-	padding-left: 25px;
+	padding-left: 20px;
+    padding-right: 20px;
+    word-break: break-word;
+    text-align: left;
 }
 img.picture {
 	float: right;
@@ -26,7 +30,11 @@ img.picture {
 	height: 250px;
 }
 p.custom .fancybox img {
-  margin: -15px 35px 0 0;
+    margin: -15px 35px 0 0;
+}
+li {
+    word-break: break-word;
+    text-align: left;
 }
 
 /* 移动端屏幕 */
