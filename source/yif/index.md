@@ -4,6 +4,9 @@ date: 2016-04-27 23:04:59
 layout: post
 comments: false
 hidedate: true
+custom_title: 下载PDF版
+custom_url: //saaima.com/yif.pdf
+custom_icon: download
 ---
 
 <style>
@@ -27,17 +30,7 @@ p.custom .fancybox img {
 }
 
 /* 移动端屏幕 */
-@media (min-width: 768px) and (max-width: 991px) {
-  p.custom .fancybox img {
-	margin: 0 auto;
-  }
-  img.picture {
-	float: right;
-	width: 180px;
-	height: 200px;
-  }
-}
-@media (max-width: 767px) {
+@media (max-width: 520px) {
   p.custom .fancybox img {
 	margin: 0 auto;
   }
@@ -95,24 +88,19 @@ p.custom .fancybox img {
 <p class="custom"> <i class="fa fa-heart-o"/></i> <span style="margin-left: 5px;">Linux & C/C++后台开发</span> </p>
 
 ## 教育背景
-<p class="custom"> <i class="fa fa-graduation-cap"/></i> <span style="margin-left: 5px;">2009/09 ~ 2013/06
+<p class="custom"> <i class="fa fa-graduation-cap"/></i> <span style="margin-left: 5px;"><strong>2009/09 ~ 2013/06</strong>
 五邑大学&nbsp;&nbsp;&nbsp;&nbsp;计算机科学与技术&nbsp;&nbsp;&nbsp;&nbsp;优秀毕业生</span> </p>
 
 
 ## 工作经历
-<p class="custom2"> <i class="fa fa-calendar-o"/></i> <span style="margin-left: 5px;"><strong>2014/03 ~ 2016/05 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-group"/></i> &nbsp;&nbsp;京东数字营销业务部深圳研发部&nbsp;&nbsp;后台开发工程师</strong>
+<p class="custom2"> <i class="fa fa-calendar-o"/></i> <span style="margin-left: 5px;"><strong>2014/04 ~ 2016/05 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-group"/></i> &nbsp;&nbsp;京东数字营销业务部深圳研发部&nbsp;&nbsp;后台开发工程师</strong>
 负责京东直投、投放工具、BOSS管理系统PHP、CGI、SHELL、后台服务设计开发与维护工作</span> </p>
 
-<p class="custom2"> <i class="fa fa-calendar-o"/></i> <span style="margin-left: 5px;"><strong>2013/06 ~ 2014/03 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-group"/></i> &nbsp;&nbsp;腾讯深圳电商研发部&nbsp;&nbsp;后台开发工程师</strong>
+<p class="custom2"> <i class="fa fa-calendar-o"/></i> <span style="margin-left: 5px;"><strong>2013/07 ~ 2014/03 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-group"/></i> &nbsp;&nbsp;腾讯深圳电商研发部&nbsp;&nbsp;后台开发工程师</strong>
 负责拍拍直通车系统CGI、SHELL、后台服务开发与维护工作</span> </p>
 
 
 ## 项目经验
-<p class="custom2"> <i class="fa fa-calendar-o"/></i> <span style="margin-left: 5px;"><strong>2015/11 ~ 2016/05 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-wrench"/></i> &nbsp;&nbsp;设计与开发自动化工具 - [MKX](https://github.com/hobby/mkx)</strong>
-开发工具：Linux/Bash、Make、SSH、Expect
-主要工作：基于团队成员的工作模式、以及现存构建系统不足的现状，自主研发出能够快速增量编译、自动部署、远程控制的脚本工具，从而提升了团队的开发效率。
-</span> </p>
-
 <p class="custom2"> <i class="fa fa-calendar-o"/></i> <span style="margin-left: 5px;"><strong>2014/04 ~ 2016/05 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-wrench"/></i> &nbsp;&nbsp;京东直投、投放工具及管理端系统后台开发与维护</strong>
 开发工具：Linux、C/C++、JS/HTML、CGI、PHP、MySQL
 主要工作：主要参与产品系统架构设计、功能划分以及核心功能的开发与外部团队联调工作，保证项目按时高质量完成。负责京东直投投放端/同步/划账等前后台服务模块、投放工具及管理端系统JS/PHP模块开发与维护。负责基础环境搭建、维护以及独立定位线上问题，及时提出可行方案并解决问题。
@@ -121,6 +109,13 @@ p.custom .fancybox img {
 <p class="custom2"> <i class="fa fa-calendar-o"/></i> <span style="margin-left: 5px;"><strong>2013/07 ~ 2014/03 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-wrench"/></i> &nbsp;&nbsp;拍拍直通车、管理端系统后台开发与维护</strong>
 开发工具：Linux、C/C++、JS/HTML、CGI、PHP、MySQL
 主要工作：主要负责直通车投放端前/后台服务模块、管理端系统JS/PHP模块开发与维护。熟悉团队开发协作流程，掌握基于CGI/AppServer的WEB开发技术。
+</span> </p>
+
+
+## 业余项目
+<p class="custom2"> <i class="fa fa-calendar-o"/></i> <span style="margin-left: 5px;"><strong>2015/11 ~ 2016/05 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-wrench"/></i> &nbsp;&nbsp;设计与开发自动化工具 - [MKX](https://github.com/hobby/mkx)</strong>
+开发工具：Linux/Bash、Make、SSH、Expect
+主要工作：基于团队成员的工作模式、以及现存构建系统不足的现状，自主研发出能够快速增量编译、自动部署、远程控制的脚本工具，从而提升了团队的开发效率。
 </span> </p>
 
 
