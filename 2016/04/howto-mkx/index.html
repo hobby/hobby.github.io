@@ -59,18 +59,18 @@
 
 
 
-<meta name="description" content="MKX是什么?mkx是一个基于make/ssh的命令行工具集，可以实现自动部署、远程控制你的程序。这里所说的程序，包含但不限于是一个普通/配置文件、so、cgi、daemon程序哟。
+<meta name="description" content="MKX是什么MKX是一个基于make/expect/ssh的命令行工具集，可以实现自动部署、远程控制你的程序。这里所说的程序，包含但不限于是一个普通/配置文件、so、cgi、daemon程序哟。
 有兴趣的同学可以下载MKX的介绍PDF详细了解一下哈，本文重点向大家展示怎么使用MKX。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MKX使用手册">
 <meta property="og:url" content="http://saaima.com/2016/04/howto-mkx/index.html">
 <meta property="og:site_name" content="SAAIMA">
-<meta property="og:description" content="MKX是什么?mkx是一个基于make/ssh的命令行工具集，可以实现自动部署、远程控制你的程序。这里所说的程序，包含但不限于是一个普通/配置文件、so、cgi、daemon程序哟。
+<meta property="og:description" content="MKX是什么MKX是一个基于make/expect/ssh的命令行工具集，可以实现自动部署、远程控制你的程序。这里所说的程序，包含但不限于是一个普通/配置文件、so、cgi、daemon程序哟。
 有兴趣的同学可以下载MKX的介绍PDF详细了解一下哈，本文重点向大家展示怎么使用MKX。">
-<meta property="og:updated_time" content="2016-06-11T07:15:34.000Z">
+<meta property="og:updated_time" content="2016-06-18T09:13:11.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MKX使用手册">
-<meta name="twitter:description" content="MKX是什么?mkx是一个基于make/ssh的命令行工具集，可以实现自动部署、远程控制你的程序。这里所说的程序，包含但不限于是一个普通/配置文件、so、cgi、daemon程序哟。
+<meta name="twitter:description" content="MKX是什么MKX是一个基于make/expect/ssh的命令行工具集，可以实现自动部署、远程控制你的程序。这里所说的程序，包含但不限于是一个普通/配置文件、so、cgi、daemon程序哟。
 有兴趣的同学可以下载MKX的介绍PDF详细了解一下哈，本文重点向大家展示怎么使用MKX。">
 
 
@@ -301,7 +301,9 @@
             </span>
             
             
+            <a class="theme-link" href="/uploads/mkx_introduction.pdf?v=20160618" title="下载MKX介绍PDF" target="_blank">
                 下载MKX介绍PDF
+            </a>
             
           </span>
           
@@ -347,8 +349,8 @@
       
 
       
-        <h2 id="MKX是什么"><a href="#MKX是什么" class="headerlink" title="MKX是什么?"></a>MKX是什么?</h2><p><code>mkx</code>是一个基于<code>make</code>/<code>ssh</code>的命令行工具集，可以实现<strong>自动部署、远程控制</strong>你的<strong>程序</strong>。<br>这里所说的<strong>程序</strong>，包含但不限于是一个普通/配置文件、so、cgi、daemon程序哟。</p>
-<p>有兴趣的同学可以下载MKX的介绍PDF详细了解一下哈，本文重点向大家展示怎么使用MKX。<br><a id="more"></a></p>
+        <h2 id="MKX是什么"><a href="#MKX是什么" class="headerlink" title="MKX是什么"></a>MKX是什么</h2><p><strong>MKX</strong>是一个基于<code>make</code>/<code>expect</code>/<code>ssh</code>的命令行工具集，可以实现<strong>自动部署、远程控制</strong>你的<strong>程序</strong>。<br>这里所说的<strong>程序</strong>，包含但不限于是一个普通/配置文件、so、cgi、daemon程序哟。</p>
+<p>有兴趣的同学可以<a href="/uploads/mkx_introduction.pdf?v=20160618">下载MKX的介绍PDF</a>详细了解一下哈，本文重点向大家展示怎么使用MKX。<br><a id="more"></a></p>
 <h2 id="安装MKX"><a href="#安装MKX" class="headerlink" title="安装MKX"></a>安装MKX</h2><h3 id="下载MKX"><a href="#下载MKX" class="headerlink" title="下载MKX"></a>下载MKX</h3><p>MKX托管在Github上面，大家可以参考下面的命令将MKX下载到用户HOME目录。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~</span><br><span class="line">$ git clone https://github.com/hobby/mkx.git</span><br><span class="line">$ cd mkx</span><br></pre></td></tr></table></figure></p>
 <h3 id="个人使用"><a href="#个人使用" class="headerlink" title="个人使用"></a>个人使用</h3><p>如果只是个人使用，你可以将MKX安装到HOME目录（~/bin）。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~/mkx</span><br><span class="line">$ make install</span><br></pre></td></tr></table></figure></p>
 <h3 id="小组使用"><a href="#小组使用" class="headerlink" title="小组使用"></a>小组使用</h3><p>如果想让小组成员也能享受MKX的高效，建议将MKX安装到系统目录（/usr/bin），<strong>注意需要root权限哟</strong>。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~/mkx</span><br><span class="line">$ sudo make install prefix=/usr</span><br></pre></td></tr></table></figure></p>
@@ -508,7 +510,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#MKX是什么"><span class="nav-number">1.</span> <span class="nav-text">MKX是什么?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装MKX"><span class="nav-number">2.</span> <span class="nav-text">安装MKX</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载MKX"><span class="nav-number">2.1.</span> <span class="nav-text">下载MKX</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#个人使用"><span class="nav-number">2.2.</span> <span class="nav-text">个人使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#小组使用"><span class="nav-number">2.3.</span> <span class="nav-text">小组使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更多细节"><span class="nav-number">2.4.</span> <span class="nav-text">更多细节</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#MKX是什么"><span class="nav-number">1.</span> <span class="nav-text">MKX是什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装MKX"><span class="nav-number">2.</span> <span class="nav-text">安装MKX</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载MKX"><span class="nav-number">2.1.</span> <span class="nav-text">下载MKX</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#个人使用"><span class="nav-number">2.2.</span> <span class="nav-text">个人使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#小组使用"><span class="nav-number">2.3.</span> <span class="nav-text">小组使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更多细节"><span class="nav-number">2.4.</span> <span class="nav-text">更多细节</span></a></li></ol></li></ol></div>
             
           </div>
         </section>

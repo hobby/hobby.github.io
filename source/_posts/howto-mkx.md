@@ -3,15 +3,15 @@ title: MKX使用手册
 date: 2016-04-27 23:27:44
 tags: mkx
 custom_title: 下载MKX介绍PDF
-custom_url:
+custom_url: /uploads/mkx_introduction.pdf?v=20160618
 custom_icon: cloud-download
 ---
 
-## MKX是什么?
-`mkx`是一个基于`make`/`ssh`的命令行工具集，可以实现**自动部署、远程控制**你的**程序**。
+## MKX是什么
+**MKX**是一个基于`make`/`expect`/`ssh`的命令行工具集，可以实现**自动部署、远程控制**你的**程序**。
 这里所说的**程序**，包含但不限于是一个普通/配置文件、so、cgi、daemon程序哟。
 
-有兴趣的同学可以下载MKX的介绍PDF详细了解一下哈，本文重点向大家展示怎么使用MKX。
+有兴趣的同学可以[下载MKX的介绍PDF](/uploads/mkx_introduction.pdf?v=20160618)详细了解一下哈，本文重点向大家展示怎么使用MKX。
 <!--more-->
 
 ## 安装MKX
