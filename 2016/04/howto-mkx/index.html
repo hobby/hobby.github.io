@@ -59,19 +59,19 @@
 
 
 
-<meta name="description" content="MKX是什么MKX是一个基于make/expect/ssh的命令行工具集，可以实现自动部署、远程控制你的程序。这里所说的程序，包含但不限于是一个普通/配置文件、so、cgi、daemon程序哟。
-有兴趣的同学可以下载MKX的介绍PDF详细了解一下哈，本文重点向大家展示怎么使用MKX。">
+<meta name="description" content="MKX是什么MKX是一组基于make/expect/ssh的脚本，能自动部署、远程控制你的程序。这里所说的程序，包含但不限于是一个普通/配置文件、so、cgi、daemon程序哟。
+有兴趣的同学可以下载MKX的介绍PDF详细了解一下，本文重点演示怎么使用MKX。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MKX使用手册">
 <meta property="og:url" content="http://saaima.com/2016/04/howto-mkx/index.html">
 <meta property="og:site_name" content="SAAIMA">
-<meta property="og:description" content="MKX是什么MKX是一个基于make/expect/ssh的命令行工具集，可以实现自动部署、远程控制你的程序。这里所说的程序，包含但不限于是一个普通/配置文件、so、cgi、daemon程序哟。
-有兴趣的同学可以下载MKX的介绍PDF详细了解一下哈，本文重点向大家展示怎么使用MKX。">
-<meta property="og:updated_time" content="2016-06-18T09:13:11.000Z">
+<meta property="og:description" content="MKX是什么MKX是一组基于make/expect/ssh的脚本，能自动部署、远程控制你的程序。这里所说的程序，包含但不限于是一个普通/配置文件、so、cgi、daemon程序哟。
+有兴趣的同学可以下载MKX的介绍PDF详细了解一下，本文重点演示怎么使用MKX。">
+<meta property="og:updated_time" content="2016-06-18T15:04:21.901Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MKX使用手册">
-<meta name="twitter:description" content="MKX是什么MKX是一个基于make/expect/ssh的命令行工具集，可以实现自动部署、远程控制你的程序。这里所说的程序，包含但不限于是一个普通/配置文件、so、cgi、daemon程序哟。
-有兴趣的同学可以下载MKX的介绍PDF详细了解一下哈，本文重点向大家展示怎么使用MKX。">
+<meta name="twitter:description" content="MKX是什么MKX是一组基于make/expect/ssh的脚本，能自动部署、远程控制你的程序。这里所说的程序，包含但不限于是一个普通/配置文件、so、cgi、daemon程序哟。
+有兴趣的同学可以下载MKX的介绍PDF详细了解一下，本文重点演示怎么使用MKX。">
 
 
 
@@ -349,12 +349,27 @@
       
 
       
-        <h2 id="MKX是什么"><a href="#MKX是什么" class="headerlink" title="MKX是什么"></a>MKX是什么</h2><p><strong>MKX</strong>是一个基于<code>make</code>/<code>expect</code>/<code>ssh</code>的命令行工具集，可以实现<strong>自动部署、远程控制</strong>你的<strong>程序</strong>。<br>这里所说的<strong>程序</strong>，包含但不限于是一个普通/配置文件、so、cgi、daemon程序哟。</p>
-<p>有兴趣的同学可以<a href="/uploads/mkx_introduction.pdf?v=20160618">下载MKX的介绍PDF</a>详细了解一下哈，本文重点向大家展示怎么使用MKX。<br><a id="more"></a></p>
-<h2 id="安装MKX"><a href="#安装MKX" class="headerlink" title="安装MKX"></a>安装MKX</h2><h3 id="下载MKX"><a href="#下载MKX" class="headerlink" title="下载MKX"></a>下载MKX</h3><p>MKX托管在Github上面，大家可以参考下面的命令将MKX下载到用户HOME目录。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~</span><br><span class="line">$ git clone https://github.com/hobby/mkx.git</span><br><span class="line">$ cd mkx</span><br></pre></td></tr></table></figure></p>
-<h3 id="个人使用"><a href="#个人使用" class="headerlink" title="个人使用"></a>个人使用</h3><p>如果只是个人使用，你可以将MKX安装到HOME目录（~/bin）。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~/mkx</span><br><span class="line">$ make install</span><br></pre></td></tr></table></figure></p>
-<h3 id="小组使用"><a href="#小组使用" class="headerlink" title="小组使用"></a>小组使用</h3><p>如果想让小组成员也能享受MKX的高效，建议将MKX安装到系统目录（/usr/bin），<strong>注意需要root权限哟</strong>。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~/mkx</span><br><span class="line">$ sudo make install prefix=/usr</span><br></pre></td></tr></table></figure></p>
-<h3 id="更多细节"><a href="#更多细节" class="headerlink" title="更多细节"></a>更多细节</h3><p>对于MKX的开发者，建议以<strong>软链方式安装</strong>到HOME目录，方便开发调试、以及小版本快速升级。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~/mkx</span><br><span class="line">$ make install link=yes   # 软链方式安装</span><br><span class="line">$ git pull                # 小版本升级（没有新增MKX工具）</span><br><span class="line">$ ls -l ~/bin/mk*         # 查看已安装的MKX工具</span><br></pre></td></tr></table></figure></p>
+        <h2 id="MKX是什么"><a href="#MKX是什么" class="headerlink" title="MKX是什么"></a>MKX是什么</h2><p><strong>MKX</strong>是一组基于<code>make</code>/<code>expect</code>/<code>ssh</code>的脚本，能<strong>自动部署、远程控制</strong>你的<strong>程序</strong>。<br>这里所说的<strong>程序</strong>，包含但不限于是一个普通/配置文件、so、cgi、daemon程序哟。</p>
+<p>有兴趣的同学可以<a href="/uploads/mkx_introduction.pdf?v=20160618">下载MKX的介绍PDF</a>详细了解一下，本文重点演示怎么使用MKX。<br><a id="more"></a></p>
+<h2 id="安装MKX"><a href="#安装MKX" class="headerlink" title="安装MKX"></a>安装MKX</h2><h3 id="下载MKX"><a href="#下载MKX" class="headerlink" title="下载MKX"></a>下载MKX</h3><p>MKX托管在Github上面，大家可以参考下面的命令将MKX下载到用户HOME目录。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/hobby/mkx.git</span><br><span class="line">$ <span class="built_in">cd</span> mkx</span><br></pre></td></tr></table></figure></p>
+<h3 id="个人使用"><a href="#个人使用" class="headerlink" title="个人使用"></a>个人使用</h3><p>如果只是个人使用，你可以将MKX安装到HOME目录（~/bin）。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/mkx</span><br><span class="line">$ make install</span><br></pre></td></tr></table></figure></p>
+<h3 id="小组使用"><a href="#小组使用" class="headerlink" title="小组使用"></a>小组使用</h3><p>如果想让小组成员也能享受MKX的高效，建议将MKX安装到系统目录（/usr/bin），<strong>注意需要root权限哟</strong>。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/mkx</span><br><span class="line">$ sudo make install prefix=/usr</span><br></pre></td></tr></table></figure></p>
+<h3 id="更多细节"><a href="#更多细节" class="headerlink" title="更多细节"></a>更多细节</h3><h4 id="开发者"><a href="#开发者" class="headerlink" title="开发者"></a>开发者</h4><p>对于MKX的开发者，建议以<strong>软链方式安装</strong>到HOME目录，方便开发调试、以及小版本快速升级。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/mkx</span><br><span class="line">$ make install link=yes   <span class="comment"># 软链方式安装</span></span><br><span class="line">$ git pull                <span class="comment"># 小版本升级（没有新增MKX工具）</span></span><br><span class="line">$ ls <span class="_">-l</span> ~/bin/mk*         <span class="comment"># 查看已安装的MKX工具</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="跨平台"><a href="#跨平台" class="headerlink" title="跨平台"></a>跨平台</h4><p>MKX依赖GNU的工具，例如bash、awk、sed、grep、getopt、expect等等，跨平台使用时保持满足依赖即可。</p>
+<ul>
+<li>Linux平台，一般都安装了上述GNU工具，可以直接使用MKX。当然，不排除某些工具是没有安装好的，遇到缺失工具时再安装就行。</li>
+<li>Windows平台，可以安装Cygwin作为MKX的运行环境，详情请移步<a href="https://www.cygwin.com/" target="_blank" rel="external">Cygwin官网</a>。</li>
+<li>Mac OS X平台，可以安装Homebrew得到GNU工具（替换Mac系统自带的BSD工具），详情请移步<a href="http://brew.sh/" target="_blank" rel="external">Homebrew官网</a>。</li>
+</ul>
+<h2 id="第一个示例"><a href="#第一个示例" class="headerlink" title="第一个示例"></a>第一个示例</h2><p>好的开始是成功的一半。<br>在成功安装MKX后，现在向大家演示第一个工具 — <strong><code>mk</code></strong>。</p>
+<h3 id="makefile"><a href="#makefile" class="headerlink" title="makefile"></a>makefile</h3><p>废话少说，先看看这个示例中的makefile。<br><figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># helloworld程序的makefile</span></span><br><span class="line"></span><br><span class="line">helloworld: helloworld.cpp</span><br><span class="line">        g++ helloworld.cpp -o helloworld</span><br></pre></td></tr></table></figure></p>
+<p>该makefile只有一个目标（make的术语，中文叫目标，英文叫target），且执行过程就是将helloworld.cpp编译链接成helloworld程序。</p>
+<h3 id="如果用make"><a href="#如果用make" class="headerlink" title="如果用make"></a>如果用make</h3><p>对于使用make的同学，有两种方式执行helloworld目标。</p>
+<ol>
+<li>默认直接运行，例如<code>make</code>，此时make会默认执行makefile中第一个目标，也就是helloworld目标。</li>
+<li>指定目标运行，例如<code>make helloworld</code>，此时make会直接执行makefile中的helloworld目标。</li>
+</ol>
+<h3 id="如果用mk"><a href="#如果用mk" class="headerlink" title="如果用mk"></a>如果用mk</h3><p>哈哈，实不相瞒，就本示例而言，mk和make使用方式没区别，例如<code>mk helloworld</code>，<strong>但mk比make少输入2个字母，因此输入过程快了一倍哈（^_^）</strong>。</p>
 
       
     </div>
@@ -510,7 +525,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#MKX是什么"><span class="nav-number">1.</span> <span class="nav-text">MKX是什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装MKX"><span class="nav-number">2.</span> <span class="nav-text">安装MKX</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载MKX"><span class="nav-number">2.1.</span> <span class="nav-text">下载MKX</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#个人使用"><span class="nav-number">2.2.</span> <span class="nav-text">个人使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#小组使用"><span class="nav-number">2.3.</span> <span class="nav-text">小组使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更多细节"><span class="nav-number">2.4.</span> <span class="nav-text">更多细节</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#MKX是什么"><span class="nav-number">1.</span> <span class="nav-text">MKX是什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装MKX"><span class="nav-number">2.</span> <span class="nav-text">安装MKX</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载MKX"><span class="nav-number">2.1.</span> <span class="nav-text">下载MKX</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#个人使用"><span class="nav-number">2.2.</span> <span class="nav-text">个人使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#小组使用"><span class="nav-number">2.3.</span> <span class="nav-text">小组使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更多细节"><span class="nav-number">2.4.</span> <span class="nav-text">更多细节</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#开发者"><span class="nav-number">2.4.1.</span> <span class="nav-text">开发者</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#跨平台"><span class="nav-number">2.4.2.</span> <span class="nav-text">跨平台</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第一个示例"><span class="nav-number">3.</span> <span class="nav-text">第一个示例</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#makefile"><span class="nav-number">3.1.</span> <span class="nav-text">makefile</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如果用make"><span class="nav-number">3.2.</span> <span class="nav-text">如果用make</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如果用mk"><span class="nav-number">3.3.</span> <span class="nav-text">如果用mk</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
