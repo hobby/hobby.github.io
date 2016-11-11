@@ -9,6 +9,3 @@ draft/
 
 # ignore hexo application file
 hexo/
-
-# ignore vendors (using 3rd/) files
-vendors/
