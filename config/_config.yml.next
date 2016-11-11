@@ -258,7 +258,7 @@ use_motion: true
 fancybox: true
 
 # Static files
-vendors: vendors
+vendors: 3rd
 css: css
 js: js
 images: images
