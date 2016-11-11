@@ -1,1 +1,11 @@
+
+# ignore temp file
+*~
+*.o
+*.swp
+
+# ignore draft file
+draft/
+
+# ignore hexo application file
 hexo/
