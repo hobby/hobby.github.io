@@ -84,3 +84,9 @@ google_site_verification: WiOrnc2Bdo81UwJuNbHF-2945cScsEqAs1zNuAdrM-U
 
 # Swiftype
 # swiftype_key: A9sVFzox5NZHcdVx8wKK
+
+# sitemap
+sitemap:
+    path: sitemap.xml
+baidusitemap:
+    path: baidusitemap.xml
