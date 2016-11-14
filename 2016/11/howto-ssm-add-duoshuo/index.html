@@ -59,18 +59,26 @@
 
 
 
-<meta name="description" content="干嘛呢最近遇到图片加水印的需求，这个在linux上面可以用imagemagick的convert工具轻松实现。但是，mac默认没有这个工具，得自己动动手安装一下，本文记录一下安装方法，备忘 &amp;amp; 扫个盲。">
+<meta name="description" content="摘要博客需要有评论模块，否则大家看完后没地方拍砖（吐嘈），那就不好玩了。静态博客自己不能实现评论模块，否则不叫静态博客了。不过还好，这个时代有一个社会化评论系统，例如多说。这些社会化评论系统可以做为静态博客的一个补充，实现评论模块。扫扫盲现在用的就是多说提供的评论系统啦，接下来介绍如何接入多说哈！">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MAC 安装imagemagick">
-<meta property="og:url" content="http://saosaomang.com/2016/11/imagemagick-for-mac/index.html">
+<meta property="og:title" content="Hexo增加社会化评论系统 - 多说">
+<meta property="og:url" content="http://saosaomang.com/2016/11/howto-ssm-add-duoshuo/index.html">
 <meta property="og:site_name" content="扫扫盲">
-<meta property="og:description" content="干嘛呢最近遇到图片加水印的需求，这个在linux上面可以用imagemagick的convert工具轻松实现。但是，mac默认没有这个工具，得自己动动手安装一下，本文记录一下安装方法，备忘 &amp;amp; 扫个盲。">
-<meta property="og:image" content="http://saosaomang.com/uploads/brew-search-imagemagick.jpg">
-<meta property="og:updated_time" content="2016-11-12T05:55:36.000Z">
+<meta property="og:description" content="摘要博客需要有评论模块，否则大家看完后没地方拍砖（吐嘈），那就不好玩了。静态博客自己不能实现评论模块，否则不叫静态博客了。不过还好，这个时代有一个社会化评论系统，例如多说。这些社会化评论系统可以做为静态博客的一个补充，实现评论模块。扫扫盲现在用的就是多说提供的评论系统啦，接下来介绍如何接入多说哈！">
+<meta property="og:image" content="http://saosaomang.com/uploads/duoshuo-create-site.png">
+<meta property="og:image" content="http://saosaomang.com/uploads/duoshuo-preview-nocomment.png">
+<meta property="og:image" content="http://saosaomang.com/uploads/duoshuo-preview-onecomment.png">
+<meta property="og:image" content="http://saosaomang.com/uploads/duoshuo-preview-multicomment.png">
+<meta property="og:image" content="http://saosaomang.com/uploads/duoshuo-preview-commentlist.png">
+<meta property="og:image" content="http://saosaomang.com/uploads/duoshuo-preview-nocomment-now.png">
+<meta property="og:image" content="http://saosaomang.com/uploads/duoshuo-preview-onecomment-now.png">
+<meta property="og:image" content="http://saosaomang.com/uploads/duoshuo-preview-multicomment-now.png">
+<meta property="og:image" content="http://saosaomang.com/uploads/duoshuo-config-commentnum.png">
+<meta property="og:updated_time" content="2016-11-14T16:05:49.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MAC 安装imagemagick">
-<meta name="twitter:description" content="干嘛呢最近遇到图片加水印的需求，这个在linux上面可以用imagemagick的convert工具轻松实现。但是，mac默认没有这个工具，得自己动动手安装一下，本文记录一下安装方法，备忘 &amp;amp; 扫个盲。">
-<meta name="twitter:image" content="http://saosaomang.com/uploads/brew-search-imagemagick.jpg">
+<meta name="twitter:title" content="Hexo增加社会化评论系统 - 多说">
+<meta name="twitter:description" content="摘要博客需要有评论模块，否则大家看完后没地方拍砖（吐嘈），那就不好玩了。静态博客自己不能实现评论模块，否则不叫静态博客了。不过还好，这个时代有一个社会化评论系统，例如多说。这些社会化评论系统可以做为静态博客的一个补充，实现评论模块。扫扫盲现在用的就是多说提供的评论系统啦，接下来介绍如何接入多说哈！">
+<meta name="twitter:image" content="http://saosaomang.com/uploads/duoshuo-create-site.png">
 
 
 
@@ -88,7 +96,7 @@
   };
 </script>
 
-  <title> MAC 安装imagemagick | 扫扫盲 </title>
+  <title> Hexo增加社会化评论系统 - 多说 | 扫扫盲 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -238,7 +246,7 @@
             
             
               
-                MAC 安装imagemagick
+                Hexo增加社会化评论系统 - 多说
               
             
           </h1>
@@ -264,8 +272,8 @@
             </span>
             <span class="post-meta-item-text">发表于</span>
             <a class="theme-link" href="/archives/2016/11/" target="_blank">
-              <time itemprop="dateCreated" datetime="2016-11-12T11:42:00+08:00" content="2016-11-12">
-                2016-11-12
+              <time itemprop="dateCreated" datetime="2016-11-14T00:00:00+08:00" content="2016-11-14">
+                2016-11-14
               </time>
             </a>
           </span>
@@ -282,8 +290,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comments"></i>
                 </span>
-                <a href="/2016/11/imagemagick-for-mac/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/imagemagick-for-mac/" itemprop="commentsCount"></span>
+                <a href="/2016/11/howto-ssm-add-duoshuo/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/howto-ssm-add-duoshuo/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -305,46 +313,17 @@
       
 
       
-        <h2 id="干嘛呢"><a href="#干嘛呢" class="headerlink" title="干嘛呢"></a>干嘛呢</h2><p>最近遇到图片加水印的需求，这个在linux上面可以用imagemagick的convert工具轻松实现。<br>但是，mac默认没有这个工具，得自己动动手安装一下，本文记录一下安装方法，备忘 &amp; 扫个盲。</p>
-<a id="more"></a>
-<h2 id="使用homebrew安装"><a href="#使用homebrew安装" class="headerlink" title="使用homebrew安装"></a>使用homebrew安装</h2><p><code>homebrew</code>就是mac下面的apt-get、yum，能用ta来安装imagemagick的，肯定不会再浪费时间折腾源码安装啦。<br>如果你的mac还没有安装<code>homebrew</code>，那就先来这<a href="http://brew.sh/" target="_blank" rel="external">瞧一瞧</a>，把homebrew装上呗。</p>
-<h3 id="检查可行性"><a href="#检查可行性" class="headerlink" title="检查可行性"></a>检查可行性</h3><p>不是说有了homebrew就能安装imagemagick的，得homebrew上面有imagemagick的安装包才行。<br>检查方法是先执行下面命令，看看输出结果是否包含<code>imagemagick</code>。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew search imagemagick</span><br></pre></td></tr></table></figure></p>
-<p>下图是YIF的输出结果。<br><img src="/uploads/brew-search-imagemagick.jpg" alt="image"></p>
-<h3 id="安装方法"><a href="#安装方法" class="headerlink" title="安装方法"></a>安装方法</h3><p>好了，经过上面方法确认可以安装后，可以通过下面命令<strong>一键安装imagemagick</strong>啦。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew install imagemagick</span><br></pre></td></tr></table></figure></p>
-<p>安装过程无需人工干预哟~~</p>
-<h3 id="检测是否成功"><a href="#检测是否成功" class="headerlink" title="检测是否成功"></a>检测是否成功</h3><p>若下面命令执行正常，说明安装ok，相关工具已到位啦。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ convert --version</span><br><span class="line">Version: ImageMagick 6.9.4-3 Q16 x86_64 2016-05-20 http://www.imagemagick.org</span><br><span class="line">Copyright: Copyright (C) 1999-2016 ImageMagick Studio LLC</span><br><span class="line">License: http://www.imagemagick.org/script/license.php</span><br><span class="line">Features: Cipher DPC Modules</span><br><span class="line">Delegates (built-in): bzlib freetype jng jpeg ltdl lzma png tiff xml zlib</span><br></pre></td></tr></table></figure></p>
-<h2 id="水印合成示例"><a href="#水印合成示例" class="headerlink" title="水印合成示例"></a>水印合成示例</h2><p>安装这么个<code>imagemagick</code>的初衷是想加快指定图片加水印的效率，例如能一条命令解决的问题，就不要搞个PhotoShop来完成啦。<br>在安装成功后，可以用convert命令来合成水印，下面给个示例命令，相关参数请对号入座哈。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ convert 原始图片路径 \</span><br><span class="line">  -gravity 水印位置枚举值(下面有) \</span><br><span class="line">  -compose over 水印图片路径  \</span><br><span class="line">  -composite 最终合成水印的图片保存路径</span><br></pre></td></tr></table></figure></p>
-<p>水印位置枚举定义表：</p>
-<table>
-<thead>
-<tr>
-<th>枚举值</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>center</td>
-<td>居中，即水印图片压在原始图片的中间区域</td>
-</tr>
-<tr>
-<td>southeast</td>
-<td>右下角，即水印图片压在原始图片的右下角区域</td>
-</tr>
-<tr>
-<td>southwast</td>
-<td>左下角，即水印图片压在原始图片的左下角区域</td>
-</tr>
-<tr>
-<td>northeast</td>
-<td>右上角，即水印图片压在原始图片的右上角区域</td>
-</tr>
-<tr>
-<td>northwast</td>
-<td>左上角，即水印图片压在原始图片的左上角区域</td>
-</tr>
-</tbody>
-</table>
+        <h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>博客需要有评论模块，否则大家看完后没地方拍砖（吐嘈），那就不好玩了。<br>静态博客自己不能实现评论模块，否则不叫静态博客了。<br>不过还好，这个时代有一个社会化评论系统，例如多说。这些社会化评论系统可以做为静态博客的一个补充，实现评论模块。<br>扫扫盲现在用的就是多说提供的评论系统啦，接下来介绍如何接入多说哈！<br><a id="more"></a></p>
+<h2 id="注册一个多说账号"><a href="#注册一个多说账号" class="headerlink" title="注册一个多说账号"></a>注册一个多说账号</h2><p>注册入口传送门来一个 -&gt; <a href="http://duoshuo.com/" target="_blank" rel="external">多说官网</a></p>
+<h2 id="创建一个新站点"><a href="#创建一个新站点" class="headerlink" title="创建一个新站点"></a>创建一个新站点</h2><p>创建站点入口传送门来一个 -&gt; <a href="http://duoshuo.com/create-site/" target="_blank" rel="external">创建站点</a>。<br>需要注意的是，建议<code>站点名称</code>和<code>多说域名</code>中的输入框部分保持一致，最好和站点的域名前缀一样咯，例如扫扫盲用的是<code>saosaomang</code>。<br><img src="/uploads/duoshuo-create-site.png" alt="image"></p>
+<h2 id="调整hexo配置"><a href="#调整hexo配置" class="headerlink" title="调整hexo配置"></a>调整hexo配置</h2><p>创建站之 后，就可以拿着创建站点时填入的<code>多说域名</code>输入框的内容配置hexo啦，例如上图中的是<code>saosaomang</code>。<br>配置hexo方式是在hexo目录下，补充<code>duoshuo_shortname: saosaomang</code>到<code>_config.yml</code>，例如扫扫盲的配置如下。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ grep duoshuo_shortname _config.yml</span><br><span class="line">duoshuo_shortname: saosaomang</span><br></pre></td></tr></table></figure></p>
+<p>至此，配置基本完成啦！</p>
+<h2 id="预览一下"><a href="#预览一下" class="headerlink" title="预览一下"></a>预览一下</h2><p>在配置完成后，执行一下<code>hexo s</code>来预览一下。</p>
+<h3 id="评论数量区"><a href="#评论数量区" class="headerlink" title="评论数量区"></a>评论数量区</h3><p>没有评论的时候<br><img src="/uploads/duoshuo-preview-nocomment.png" alt="image"><br>只有1条评论的时候<br><img src="/uploads/duoshuo-preview-onecomment.png" alt="image"><br>有多条评论的时候<br><img src="/uploads/duoshuo-preview-multicomment.png" alt="image"></p>
+<h3 id="评论编辑区"><a href="#评论编辑区" class="headerlink" title="评论编辑区"></a>评论编辑区</h3><p><img src="/uploads/duoshuo-preview-commentlist.png" alt="image"></p>
+<h2 id="调整评论数量展示"><a href="#调整评论数量展示" class="headerlink" title="调整评论数量展示"></a>调整评论数量展示</h2><p>说实话，笔者不太喜欢默认的评论数量展示风格，于是有了一翻调整过程，最终效果如下。<br>没有评论的时候<br><img src="/uploads/duoshuo-preview-nocomment-now.png" alt="image"><br>只有1条评论的时候<br><img src="/uploads/duoshuo-preview-onecomment-now.png" alt="image"><br>有多条评论的时候<br><img src="/uploads/duoshuo-preview-multicomment-now.png" alt="image"></p>
+<p>那么，怎么配置的？见：<br><img src="/uploads/duoshuo-config-commentnum.png" alt="image"></p>
+<p>还有疑问？留言哈~~~</p>
 
       
     </div>
@@ -362,17 +341,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/04/howto-mkx/" rel="next" title="MKX使用手册">
-                <i class="fa fa-chevron-left"></i> MKX使用手册
+              <a href="/2016/11/imagemagick-for-mac/" rel="next" title="MAC 安装imagemagick">
+                <i class="fa fa-chevron-left"></i> MAC 安装imagemagick
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/11/howto-ssm-add-duoshuo/" rel="prev" title="Hexo增加社会化评论系统 - 多说">
-                Hexo增加社会化评论系统 - 多说 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -398,8 +373,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/11/imagemagick-for-mac/"
-           data-title="MAC 安装imagemagick" data-url="http://saosaomang.com/2016/11/imagemagick-for-mac/">
+      <div class="ds-thread" data-thread-key="2016/11/howto-ssm-add-duoshuo/"
+           data-title="Hexo增加社会化评论系统 - 多说" data-url="http://saosaomang.com/2016/11/howto-ssm-add-duoshuo/">
       </div>
     
   </div>
@@ -498,7 +473,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#干嘛呢"><span class="nav-number">1.</span> <span class="nav-text">干嘛呢</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用homebrew安装"><span class="nav-number">2.</span> <span class="nav-text">使用homebrew安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#检查可行性"><span class="nav-number">2.1.</span> <span class="nav-text">检查可行性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装方法"><span class="nav-number">2.2.</span> <span class="nav-text">安装方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#检测是否成功"><span class="nav-number">2.3.</span> <span class="nav-text">检测是否成功</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#水印合成示例"><span class="nav-number">3.</span> <span class="nav-text">水印合成示例</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#摘要"><span class="nav-number">1.</span> <span class="nav-text">摘要</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注册一个多说账号"><span class="nav-number">2.</span> <span class="nav-text">注册一个多说账号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建一个新站点"><span class="nav-number">3.</span> <span class="nav-text">创建一个新站点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#调整hexo配置"><span class="nav-number">4.</span> <span class="nav-text">调整hexo配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#预览一下"><span class="nav-number">5.</span> <span class="nav-text">预览一下</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#评论数量区"><span class="nav-number">5.1.</span> <span class="nav-text">评论数量区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#评论编辑区"><span class="nav-number">5.2.</span> <span class="nav-text">评论编辑区</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#调整评论数量展示"><span class="nav-number">6.</span> <span class="nav-text">调整评论数量展示</span></a></li></ol></div>
             
           </div>
         </section>

@@ -74,8 +74,8 @@ deploy:
 # 第三方系统
 baidu_analytics: d3d75263e921adcafc5c15821c13ffb3
 
-# FIXME: 多说评论
-#duoshuo_shortname: saaima
+# 多说评论
+duoshuo_shortname: saosaomang
 
 # Creative Commons
 creative_commons: by-nc-sa
