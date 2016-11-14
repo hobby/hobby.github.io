@@ -1,3 +1,3 @@
-# Saaima.com
+# 扫扫盲
 
-Welcome to **[saaima.com](//saaima.com/ "点击进入saaima.com")**
+Welcome to **[saosaomang.com](http://saosaomang.com/ "点击进入扫扫盲")**

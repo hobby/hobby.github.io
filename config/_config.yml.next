@@ -6,7 +6,7 @@
 favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "saaima, YIF"
+keywords: "扫扫盲,先来扫扫盲,迷茫,YIF"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -29,7 +29,7 @@ menu:
   archives: /archives
   categories: /categories
   tags: /tags
-  about: /2016/03/saaima-changelog
+  about: /2016/03/about-ssm
   #commonweal: /404.html
 
 
@@ -233,8 +233,9 @@ facebook_sdk:
 
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
+# FIXME:
 leancloud_visitors:
-  enable: true
+  enable: false
   app_id: vezCGw36kgrEwHpexgpM7laO-gzGzoHsz
   app_key: fIU6lYTloTqnRmDHf06CHkOw
 
@@ -243,6 +244,7 @@ leancloud_visitors:
 # tencent_analytics:
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
+# FIXME:
 baidu_push: true
 
 

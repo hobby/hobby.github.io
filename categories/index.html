@@ -43,7 +43,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="saaima, YIF" />
+  <meta name="keywords" content="扫扫盲,先来扫扫盲,迷茫,YIF" />
 
 
 
@@ -59,16 +59,16 @@
 
 
 
-<meta name="description" content="别只会敲码，去晒码">
+<meta name="description" content="扫扫盲，不迷茫">
 <meta property="og:type" content="website">
 <meta property="og:title" content="categories">
-<meta property="og:url" content="http://saaima.com/categories/index.html">
-<meta property="og:site_name" content="SAAIMA">
-<meta property="og:description" content="别只会敲码，去晒码">
+<meta property="og:url" content="http://saosaomang.com/categories/index.html">
+<meta property="og:site_name" content="扫扫盲">
+<meta property="og:description" content="扫扫盲，不迷茫">
 <meta property="og:updated_time" content="2016-05-27T08:37:34.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="categories">
-<meta name="twitter:description" content="别只会敲码，去晒码">
+<meta name="twitter:description" content="扫扫盲，不迷茫">
 
 
 
@@ -90,7 +90,7 @@
   
 
   
-    分类 | SAAIMA
+    分类 | 扫扫盲
   
 </title>
 </head>
@@ -133,11 +133,11 @@
   <div class="custom-logo-site-title">
     <a href="/"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <span class="site-title">SAAIMA</span>
+      <span class="site-title">扫扫盲</span>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
-  <p class="site-subtitle"></p>
+  <p class="site-subtitle">世界那么大，先来扫扫盲</p>
 </div>
 
 <div class="site-nav-toggle">
@@ -196,7 +196,7 @@
       
         
         <li class="menu-item menu-item-about">
-          <a href="/2016/03/saaima-changelog" rel="section">
+          <a href="/2016/03/about-ssm" rel="section">
             
               <i class="menu-item-icon fa fa-info-circle fa-fw"></i> <br />
             
@@ -229,7 +229,7 @@
             目前共计 1 个分类
         </div>
         <div class="category-all">
-          <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/开发日志/">开发日志</a><span class="category-list-count">1</span></li></ul>
+          <ul class="category-list"></ul>
         </div>
       </div>
     
@@ -267,7 +267,7 @@
                src="/images/default_avatar.jpg"
                alt="YIF" />
           <p class="site-author-name" itemprop="name">YIF</p>
-          <p class="site-description motion-element" itemprop="description">别只会敲码，去晒码</p>
+          <p class="site-description motion-element" itemprop="description">扫扫盲，不迷茫</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
@@ -417,28 +417,9 @@
 
   
 
-  
-    
-  
-
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"saaima"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
-
-  
-    
-  
 
 
+  
 
 
 
@@ -447,99 +428,6 @@
   
 
   
-
-  
-  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
-  <script>AV.initialize("vezCGw36kgrEwHpexgpM7laO-gzGzoHsz", "fIU6lYTloTqnRmDHf06CHkOw");</script>
-  <script>
-    function showTime(Counter) {
-      var query = new AV.Query(Counter);
-      var entries = [];
-      var $visitors = $(".leancloud_visitors");
-
-      $visitors.each(function () {
-        entries.push( $(this).attr("id").trim() );
-      });
-
-      query.containedIn('url', entries);
-      query.find()
-        .done(function (results) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.get('url');
-            var time = item.get('time');
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-        })
-        .fail(function (object, error) {
-          console.log("Error: " + error.code + " " + error.message);
-        });
-    }
-
-    function addCount(Counter) {
-      var $visitors = $(".leancloud_visitors");
-      var url = $visitors.attr('id').trim();
-      var title = $visitors.attr('data-flag-title').trim();
-      var query = new AV.Query(Counter);
-
-      query.equalTo("url", url);
-      query.find({
-        success: function(results) {
-          if (results.length > 0) {
-            var counter = results[0];
-            counter.fetchWhenSave(true);
-            counter.increment("time");
-            counter.save(null, {
-              success: function(counter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(counter.get('time'));
-              },
-              error: function(counter, error) {
-                console.log('Failed to save Visitor num, with error message: ' + error.message);
-              }
-            });
-          } else {
-            var newcounter = new Counter();
-            newcounter.set("title", title);
-            newcounter.set("url", url);
-            newcounter.set("time", 1);
-            newcounter.save(null, {
-              success: function(newcounter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
-              },
-              error: function(newcounter, error) {
-                console.log('Failed to create');
-              }
-            });
-          }
-        },
-        error: function(error) {
-          console.log('Error:' + error.code + " " + error.message);
-        }
-      });
-    }
-
-    $(function() {
-      var Counter = AV.Object.extend("Counter");
-      if ($('.leancloud_visitors').length == 1) {
-        addCount(Counter);
-      } else if ($('.post-title-link').length > 1) {
-        showTime(Counter);
-      }
-    });
-  </script>
-
-
 
   
 <script type="text/javascript" async src="//push.zhanzhang.baidu.com/push.js">

@@ -3,17 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: SAAIMA
-subtitle: 
-description: 别只会敲码，去晒码
-#description: ku7d@qq.com
+title: 扫扫盲
+subtitle: 世界那么大，先来扫扫盲
+description: 扫扫盲，不迷茫
 author: YIF
 language: zh-Hans
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://saaima.com
+url: http://saosaomang.com
 root: /
 permalink: :year/:month/:title/
 permalink_defaults:
@@ -74,7 +73,9 @@ deploy:
 
 # 第三方系统
 baidu_analytics: d3d75263e921adcafc5c15821c13ffb3
-duoshuo_shortname: saaima
+
+# FIXME: 多说评论
+#duoshuo_shortname: saaima
 
 # Creative Commons
 creative_commons: by-nc-sa
