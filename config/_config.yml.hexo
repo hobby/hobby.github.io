@@ -72,7 +72,7 @@ deploy:
   type:
 
 # 第三方系统
-baidu_analytics: d3d75263e921adcafc5c15821c13ffb3
+baidu_analytics: 6156d4ce8a0f5b95491a3741b126fa24
 
 # 多说评论
 duoshuo_shortname: saosaomang
