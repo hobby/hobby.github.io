@@ -1,6 +1,7 @@
 ---
 title: MAC 安装imagemagick
 date: 2016-11-12 11:42:00
+categories: HOWTO
 ---
 
 ## 干嘛呢

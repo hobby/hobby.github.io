@@ -1,6 +1,7 @@
 ---
 title: Hexo增加社会化评论系统 - 多说
 date: 2016-11-14 00:00:00
+categories: HOWTO
 ---
 
 ## 摘要

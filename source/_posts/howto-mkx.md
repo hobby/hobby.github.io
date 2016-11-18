@@ -1,6 +1,7 @@
 ---
 title: MKX使用手册
 date: 2016-04-27 23:27:44
+categories: HOWTO
 tags: mkx
 custom_title: 下载MKX介绍PDF
 custom_url: /uploads/mkx_introduction.pdf?v=20160618
