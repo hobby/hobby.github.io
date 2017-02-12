@@ -3,6 +3,7 @@ title: 个体工商户开通微信支付
 date: 2017-02-11 23:00:00
 categories: HOWTO
 ---
+<div style="text-align: center"><span style="display: inline-block; width: 73px; height: 57px; background: url(/uploads/weixin-pay-sprite.png) no-repeat; background-position: 2px -159px;"></span><span style="display: inline-block; width: 73px; height: 57px; background: url(/uploads/weixin-pay-sprite.png) no-repeat; background-position: 4px -230px;"></span><span style="display: inline-block; width: 73px; height: 57px; background: url(/uploads/weixin-pay-sprite.png) no-repeat; background-position: 8px -294px;"></span></div>
 
 ## 讲在前面
 昨天完成了一个个体工商户的微信公众号认证、微信支付开通申请，现趁热打铁记录记录历程，备忘 & 方便大家参考。
