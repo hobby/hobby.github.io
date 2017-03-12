@@ -5,7 +5,7 @@ layout: post
 comments: false
 hidedate: true
 custom_title: 下载PDF版
-custom_url: //saaima.com/yif.pdf
+custom_url: //saosaomang.com/yif.pdf
 custom_icon: download
 ---
 
@@ -89,7 +89,7 @@ li {
 
 <p class="custom"> <i class="fa fa-envelope-o"/></i> <span style="margin-left: 12px;">ku7d@qq.com</span> </p>
 
-<p class="custom"> <i class="fa fa-home"/></i> <span style="margin-left: 12px;"><a target="_blank" href="http://saaima.com">saaima.com</a></span> </p>
+<p class="custom"> <i class="fa fa-home"/></i> <span style="margin-left: 12px;"><a target="_blank" href="http://saosaomang.com">saosaomang.com</a></span> </p>
 
 <p class="custom"> <i class="fa fa-github"/></i> <span style="margin-left: 12px;"><a target="_blank" href="https://github.com/hobby">github.com/hobby</a></span> </p>
 
