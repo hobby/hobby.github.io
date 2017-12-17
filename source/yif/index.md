@@ -117,7 +117,7 @@ li {
 主要工作：主要负责AI开放平台系统技术选型、方案设计、基础环境/组件搭建和开发。负责AI开放平台API设计、内部合作方技术方案对接和联调工作。
 </span> </p>
 
-<p class="custom2"> <i class="fa fa-calendar-o"/></i> <span style="margin-left: 5px;"><strong>2016/08 ~ 2017/02 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-wrench"/></i> &nbsp;&nbsp;创业服务平台系统后台开发与维护</strong>
+<p class="custom2"> <i class="fa fa-calendar-o"/></i> <span style="margin-left: 5px;"><strong>2016/08 ~ 2017/02 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-wrench"/></i> &nbsp;&nbsp;腾讯创业服务平台系统后台开发与维护</strong>
 开发工具：Linux、PHP、MySQL
 主要工作：主要参与产品需求分析、方案设计，以及818创业节多账户红包活动系统设计与开发联调工作，项目按时高质量完成，活动期间系统稳定可靠。
 </span> </p>
