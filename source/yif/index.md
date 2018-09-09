@@ -101,8 +101,8 @@ li {
 
 
 ## 工作经历
-<p class="custom2"> <i class="fa fa-calendar-o"/></i> <span style="margin-left: 5px;"><strong>2016/08 ~ 2017/12 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-group"/></i> &nbsp;&nbsp;腾讯-MIG开放平台部&nbsp;&nbsp;后台开发工程师</strong>
-负责腾讯创业服务平台（c.qq.com）、腾讯AI开放平台（ai.qq.com）系统设计开发与维护工作</span> </p>
+<p class="custom2"> <i class="fa fa-calendar-o"/></i> <span style="margin-left: 5px;"><strong>2016/08 ~ 至今 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-group"/></i> &nbsp;&nbsp;腾讯-MIG开放平台部&nbsp;&nbsp;后台开发工程师</strong>
+负责创业服务平台（c.qq.com）、从0到1搭建AI开放平台（ai.qq.com）系统设计&开发</span> </p>
 
 <p class="custom2"> <i class="fa fa-calendar-o"/></i> <span style="margin-left: 5px;"><strong>2014/04 ~ 2016/07 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-group"/></i> &nbsp;&nbsp;京东数字营销业务部深圳研发部&nbsp;&nbsp;后台开发工程师</strong>
 负责京东直投、投放工具、BOSS管理系统PHP、CGI、SHELL、后台服务设计开发与维护工作</span> </p>
@@ -112,7 +112,7 @@ li {
 
 
 ## 项目经验
-<p class="custom2"> <i class="fa fa-calendar-o"/></i> <span style="margin-left: 5px;"><strong>2017/03 ~ 2017/12 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-wrench"/></i> &nbsp;&nbsp;腾讯AI开放平台系统后台开发与维护</strong>
+<p class="custom2"> <i class="fa fa-calendar-o"/></i> <span style="margin-left: 5px;"><strong>2017/03 ~ 至今 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-wrench"/></i> &nbsp;&nbsp;腾讯AI开放平台系统后台开发与维护</strong>
 开发工具：Linux、C/C++、TAF/Sumeru/Sparta、MYSQL(MDB)
 主要工作：主要负责AI开放平台系统技术选型、方案设计、基础环境/组件搭建和开发。负责AI开放平台API设计、内部合作方技术方案对接和联调工作。
 </span> </p>
@@ -140,7 +140,7 @@ li {
 </span> </p>
 
 ## 获得奖项
-* 2017 ~ 2017&nbsp;&nbsp;&nbsp;&nbsp;连续2次荣获腾讯5星考核佳绩
+* 2017 ~ 2018&nbsp;&nbsp;&nbsp;&nbsp;连续2次5星、1次4星员工
 * 2014 ~ 2015&nbsp;&nbsp;&nbsp;&nbsp;连续2年荣获京东年度优秀员工一等奖
 * 2010 ~ 2012&nbsp;&nbsp;&nbsp;&nbsp;连续3年荣获学校一等奖学金及三好学生
 
